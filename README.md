@@ -5,7 +5,7 @@ This is a NodeJs-based IRCTC API that allows users to register, login, check tra
 
 ## Tech Stack
 - Backend: NodeJs
-- Database: PostgreSQL
+- Database: PostgreSQL (using neon db)
 - Authentication: JsonWebToken
 - Password Hashing: Bcrypt
 - ORM: Prisma
@@ -24,7 +24,7 @@ cd irctc_api
 ```
 
 ```
-`DATABASE_URL="postgresql://username:password@localhost:5432/railway_db"
+`DATABASE_URL="your database url"
 ADMIN_API_KEY=your_secret_admin_api_key
 JWT_SECRET=your_jwt_secret_key
 ```
@@ -53,7 +53,7 @@ npm run dev
 {
   "username": "string",
   "email": "string",
-  "password": "string"
+  "password": "string",
   "role": "string"
 }
 ```
@@ -118,12 +118,3 @@ npm run dev
 - Train is automatically marked inactive if no seats are available
 
 
-## Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
