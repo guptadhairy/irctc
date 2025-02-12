@@ -19,8 +19,9 @@ This is a NodeJs-based IRCTC API that allows users to register, login, check tra
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/SudhanshuAi/irctc_api.git
-cd irctc_api
+git clone https://github.com/guptadhairy/irctc
+cd app name
+npm i
 ```
 
 ```
